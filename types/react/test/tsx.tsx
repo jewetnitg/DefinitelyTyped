@@ -63,3 +63,21 @@ const StatelessComponentWithoutProps: React.SFC = (props) => {
     return <div />;
 };
 <StatelessComponentWithoutProps />;
+
+class ComponentThatRendersAString extends React.Component {
+
+    render() {
+        return "";
+    }
+
+}
+
+class ComponentThatRendersAnArrayOfElements extends React.Component {
+
+    render() {
+        return [
+            <div key={0}></div>,
+        ];
+    }
+
+}
